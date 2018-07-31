@@ -1,7 +1,7 @@
-require "carrierwave/picture/version"
+require "carrierwave-picture/version"
 require "mini_magick"
 
-module Carrierwave
+module CarrierWave
   module Picture
 
     def convert(options={})
