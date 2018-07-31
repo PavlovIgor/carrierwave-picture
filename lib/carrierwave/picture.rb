@@ -1,5 +1,5 @@
 require "carrierwave/picture/version"
-require "mini_magic"
+require "mini_magick"
 
 module Carrierwave
   module Picture
