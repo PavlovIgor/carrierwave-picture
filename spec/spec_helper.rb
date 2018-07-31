@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "carrierwave/picture"
+require "carrierwave-picture"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
