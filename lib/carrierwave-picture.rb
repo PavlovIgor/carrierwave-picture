@@ -1,20 +1,12 @@
 require "carrierwave-picture/version"
-require "mini_magick"
+require "carrierwave-picture/picture_converter"
+require "carrierwave-picture/picture_helper"
+require 'mini_magick'
 
-module CarrierWave
-  module Picture
+module CarrierWave::Picture
+  require 'carrierwave-picture/railtie' if defined?(Rails)
 
-    def convert(options={})
-      version :webp do
-        process :convert_to_webp
-      end
-    end
-
-    def convert_to_webp
-      manipulate! do |img|
-        img.format("webp")
-      end
-    end
-
+  def convert(options = {})
+    PictureConverter.convert(current_path)
   end
 end
