@@ -49,12 +49,12 @@ end
 This will automatically create webp and jpg versions of the image. Now you can call picture_tag in your views:
 
 ```ruby
-<%= picture image_path, options_hash %>
+<%= picture_tag image_path, options_hash %>
 ```
 
 Example:
 ```ruby
-<%= picture 'image.png', class: 'card' %>
+<%= picture_tag 'image.png', class: 'card' %>
 ```
 
 It is return html code like:
