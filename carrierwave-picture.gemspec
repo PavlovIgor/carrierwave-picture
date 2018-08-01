@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Igor Pavlov"]
   spec.email         = ["igor@snega.pro"]
 
-  spec.summary       = %q{A simple gem for convertating images to new web formats with Carriewave.}
-  spec.description   = %q{Converting images to webp, jp2 and progressive jpeg via imagemagic.}
+  spec.summary       = %q{A simple gem for converting images to new web formats with Carriewave.}
+  spec.description   = %q{Converting images to webp and progressive jpeg via imagemagic.}
   spec.homepage      = "https://github.com/PavlovIgor/carrierwave-picture"
   spec.license       = "MIT"
 
