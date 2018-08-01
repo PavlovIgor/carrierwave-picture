@@ -1,24 +1,18 @@
 # Carrierwave::Picture
 
-Simple gem for converting images to webp and progressive jpeg via imagemagic and add picture_tag to action view.
+Simple gem for converting images to webp and jp2 via imagemagic and add picture_tag to action view.
 
 ## Installation
 
-Check that you have installed imagemagick:
-
-    $ convert -version
-
-If not, type in your OSX console:
+Install dependencies OSX:
 
     $ brew install imagemagick
+    $ brew install webp
 
 Or in your Debian, Ubuntu console:
 
-    apt-get -y install imagemagick
-
-Or in your CentOS, Fedora console:
-
-    yum -y install ImageMagick
+    sudo apt-get install imagemagick
+    sudo apt-get install webp
 
 After ImageMagic installed add this line to your application's Gemfile:
 

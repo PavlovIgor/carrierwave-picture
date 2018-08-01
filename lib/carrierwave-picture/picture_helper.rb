@@ -9,9 +9,9 @@ module PictureHelper
                           style: "height: inherit; width: inherit" if File.exist?(Rails.root.join("public/#{path}.webp"))
       concat content_tag  :source,
                           nil,
-                          srcset: "#{path}.jpg",
-                          type: "image/jpeg",
-                          style: "height: inherit; width: inherit" if File.exist?(Rails.root.join("public/#{path}.jpg"))
+                          srcset: "#{path}.jp2",
+                          type: "image/jp2",
+                          style: "height: inherit; width: inherit" if File.exist?(Rails.root.join("public/#{path}.jp2"))
       concat image_tag path, style: "height: inherit; width: inherit"
     end
 
