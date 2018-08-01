@@ -6,7 +6,7 @@ require 'mini_magick'
 module CarrierWave::Picture
   require 'carrierwave-picture/railtie' if defined?(Rails)
 
-  def convert(options = {})
+  def prepare_picture(options = {})
     PictureConverter.convert(current_path)
   end
 end

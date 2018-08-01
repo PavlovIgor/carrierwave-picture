@@ -36,13 +36,13 @@ Or install it yourself as:
 
 ## Usage
 
-Include CarrierWave::Picture into your CarrierWave uploader and call convert method after carrierwave store:
+Include CarrierWave::Picture into your CarrierWave uploader and call prepare_picture method after carrierwave store:
 
 ```ruby
 class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::Picture
 
-  after :store, :convert
+  after :store, :prepare_picture
 end
 ```
 
