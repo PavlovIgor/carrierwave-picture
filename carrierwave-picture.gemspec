@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "carrierwave-picture/version"
@@ -7,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "carrierwave-picture"
   spec.version       = Carrierwave::Picture::VERSION
   spec.authors       = ["Igor Pavlov"]
-  spec.email         = ["igor@snega.pro"]
+  spec.email         = ["igorpavlov.ip@gmail.com"]
 
   spec.summary       = %q{A simple gem for use new web image formats with Carriewave.}
   spec.description   = %q{Converting images to webp and jp2 via imagemagic and add picture_tag to action view.}
