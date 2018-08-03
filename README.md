@@ -66,7 +66,7 @@ If you have uploaded images you can use rake task to convert. Default path is "p
 
 Example:
 
-  $ rake picture:prepare["public/uploads"]
+    $ rake picture:prepare["public/uploads"]
 
 ## Contributing
 
