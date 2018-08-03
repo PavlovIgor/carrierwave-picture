@@ -1,5 +1,5 @@
 module PictureHelper
-  def self.picture_tag(path, options = {})
+  def picture_tag(path, options = {})
 
     content_tag(:picture, options) do
       concat content_tag  :source,

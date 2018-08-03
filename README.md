@@ -60,6 +60,14 @@ It is return html code like:
 </picture>
 ```
 
+If you have uploaded images you can use rake task to convert. Default path is "public":
+
+    $ rake picture:prepare[:path]
+
+Example:
+
+  $ rake picture:prepare["public/uploads"]
+
 ## Contributing
 
 1. Fork it

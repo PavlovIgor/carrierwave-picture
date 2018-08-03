@@ -6,6 +6,10 @@ module Picture
     initializer 'picture.helper' do |app|
       ActionView::Base.send :include, PictureHelper
     end
+
+    rake_tasks do
+      load 'tasks/picture.rake'
+    end
   end
 
 end
